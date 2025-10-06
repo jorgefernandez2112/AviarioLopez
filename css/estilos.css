@@ -1,0 +1,212 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: url('../AVIARIO_LOPEZ/img/FONDO.jpg') no-repeat center center fixed;
+    background-size: cover;
+    overflow-x: hidden; /* evita scroll horizontal */
+    height: auto;       /* permite que el body crezca con el contenido */
+}
+
+/* Capa principal */
+.overlay {
+    width: 100%;
+    min-height: 100vh; /* al menos la altura de la pantalla */
+    padding: 20px;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Fondo semi-transparente */
+body::before {
+    content: "";
+    position: fixed;    /* fijo para que no afecte al scroll */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../img/FONDO.jpg') no-repeat center center/cover;
+    opacity: 0.7; 
+    z-index: -1;
+}
+
+
+/* Logo */
+.logo {
+    width: 200px;
+    height: auto;
+    margin-bottom: 15px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+/* Título principal */
+.titulo {
+    font-size: 3.5rem;
+    letter-spacing: 4px;
+    font-weight: 700;
+    margin: 0;
+    text-transform: uppercase;
+    text-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+}
+
+/* Enlaces */
+.enlaces {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+/* Botones minimalistas */
+.link {
+    text-decoration: none;
+    color: white;
+    border: 2px solid white;
+    padding: 12px 35px;
+    border-radius: 50px;
+    font-size: 1.3rem;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(3px);
+}
+
+.link:hover {
+    background-color: white;
+    color: black;
+    transform: scale(1.05);
+}
+
+/* Estilo para el mensaje de "agotados" en rojo */
+.mensaje {
+    text-align: center;
+    margin-top: 10px; /* Ajusta la distancia desde el header */
+    text-transform: uppercase;
+    color: red;
+    text-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+}
+
+.mensaje h2 {
+    font-size: 2.3rem; /* Tamaño reducido */
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.mensaje p {
+    font-size: 1.2rem; /* Tamaño más pequeño */
+    font-weight: 300;
+}
+
+/* Botón para volver al inicio */
+.volver {
+    margin-top: 5px; /* Más cerca del mensaje */
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 2px solid white;
+    padding: 10px 25px;
+    border-radius: 50px;
+    font-size: 1.4rem;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(3px);
+}
+
+.volver:hover {
+    background-color: white;
+    color: black;
+    transform: scale(1.05);
+}
+
+.cuadro-blanco {
+    background-color: white;
+    color: black;
+    padding: 20px 25px; /* menos espacio interno */
+    border-radius: 15px;
+    max-width: 450px; /* más estrecho */
+    text-align: center;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    margin-top: 30px;
+}
+
+.cuadro-blanco h2 {
+    font-size: 1.8rem; /* un poco más pequeño */
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.cuadro-blanco p {
+    font-size: 0.95rem; 
+    line-height: 1.5;
+}
+
+/* Botón para volver al inicio */
+.volverSN {
+    margin-top: 55px;
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 2px solid white;
+    padding: 10px 25px;
+    border-radius: 50px;
+    font-size: 1.4rem;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(3px);
+}
+
+.volverSN:hover {
+    background-color: white;
+    color: black;
+    transform: scale(1.05);
+}
+
+.pareja {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;  /* se ajusta en móvil */
+    margin: 40px 0;
+}
+
+.ave {
+    text-align: center;
+    max-width: 300px;
+}
+
+.foto-ave {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    margin-bottom: 15px;
+}
+
+.ave p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+.ave p strong {
+    color: black;
+}
+
+/* Botón volver al inicio */
+.volverSN {
+    margin-top: 20px;
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 2px solid white;
+    padding: 10px 25px;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(3px);
+}
+
+.volverSN:hover {
+    background-color: white;
+    color: black;
+    transform: scale(1.05);
+}
